@@ -82,49 +82,52 @@ export default {
 #hamburger.active span:nth-of-type(1) {
     top: 20px;
     transform: rotate(45deg);
-  }
+}
 
-  #hamburger.active span:nth-of-type(2) {
-    opacity: 0;
-  }
-  #hamburger.active span:nth-of-type(3) {
-    top: 20px;
-    transform: rotate(-45deg);
-  }
-  .menu-content {
-    display: block;
-    width: calc(100% - 80px);
-    height: 100%;
-    text-align: center;
-    transition: 0.2s;
-    position: fixed;
-    top: 0;
-    left: calc(-100% - 80px);
-    background: #fff;
-    color: #333333;
-    box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
-    z-index: 999;
-  }
-  .menu-content .menu-title {
-    margin: 40px 20px;
-    font-size: 2.2rem;
-    color: #333333;
-    text-align: left;
-    font-weight: bold;
-  }
-  .menu-content li a {
-    color: #333333;
-    margin: 15px;
-    padding: 5px;
-    border-bottom: 0.5px solid #2662d5;
-    text-decoration: none;
-    display: block;
-  }
-  .menu-content li {
-    width: 100%;
-    text-align: left;
-  }
+#hamburger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+#hamburger.active span:nth-of-type(3) {
+  top: 20px;
+  transform: rotate(-45deg);
+}
+.menu-content {
+  display: block;
+  width: calc(100% - 80px);
+  height: 100%;
+  text-align: center;
+  transition: 0.2s;
+  position: fixed;
+  top: 0;
+  left: calc(-100% - 80px);
+  background: #fff;
+  color: #333333;
+  box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
+  z-index: 999;
+}
+.menu-content .menu-title {
+  margin: 40px 20px;
+  font-size: 2.2rem;
+  color: #333333;
+  text-align: left;
+  font-weight: bold;
+}
+.menu-content li a {
+  color: #333333;
+  margin: 15px;
+  padding: 5px;
+  border-bottom: 0.5px solid #2662d5;
+  text-decoration: none;
+  display: block;
+}
+.menu-content li {
+  width: 100%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
   .menu-content.open {
     left: 0;
   }
+}
 </style>
